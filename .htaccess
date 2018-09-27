@@ -1,0 +1,12 @@
+# 
+RewriteBase /
+ErrorDocument 400 http://demainist.cf/
+ErrorDocument 401 http://demainist.cf/
+ErrorDocument 403 http://demainist.cf/
+ErrorDocument 404 http://demainist.cf/
+ErrorDocument 503 http://demainist.cf/
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+Options -Indexes
+

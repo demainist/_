@@ -1,0 +1,2 @@
+red (on click)		0, 0, 255, 0.2
+red (on hover)		#0000FF

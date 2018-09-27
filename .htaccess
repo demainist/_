@@ -1,10 +1,10 @@
 # 
 RewriteBase /
-ErrorDocument 400 http://demainist.cf/
-ErrorDocument 401 http://demainist.cf/
-ErrorDocument 403 http://demainist.cf/
-ErrorDocument 404 http://demainist.cf/
-ErrorDocument 503 http://demainist.cf/
+ErrorDocument 400 http://736d.cf/
+ErrorDocument 401 http://736d.cf/
+ErrorDocument 403 http://736d.cf/
+ErrorDocument 404 http://736d.cf/
+ErrorDocument 503 http://736d.cf/
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]

@@ -4,7 +4,7 @@
   left: 90%;
   top: 20%;
 }
-#deleuze{
+#storyspace{
   z-index: 100;
   position: absolute;
   left: 92%;
@@ -16,31 +16,31 @@
   left: 30%;
   top: 11%;
 }
-#test{
+#vannevar{
   z-index: 100;
   position: absolute;
   left: 50%;
   top: 32%;
 }
-#test2{
+#rayuela{
   z-index: 100;
   position: absolute;
   left: 25%;
   top: 95%;
 }
-#medijos{
+#memex{
   z-index: 100;
   position: absolute;
   left: 8%;
   top: 73%;
 }
-#ilgesnis_tekstas_nei_iprastai{
+#kvazihipertekstas{
   z-index: 100;
   position: absolute;
   left: 16%;
   top: 24%;
 }
-#dead_bird{
+#ted{
   z-index: 100;
   position: absolute;
   left: 70%;
@@ -52,13 +52,13 @@
   left: 92%;
   top: 87%;
 }
-#ilgesnis_tekstas{
+#aarseth{
   z-index: 100;
   position: absolute;
   left: 37%;
   top: 74%;
 }
-#bird{
+#joyce{
   z-index: 100;
   position: absolute;
   left: 5%;

@@ -75,9 +75,7 @@ html{
     font-size:16px
 }
 body{
-    overflow-y:scroll;
-    scrollbar-width:none;
-    -ms-overflow-style:none;
+    overflow: hidden;
     font-size:16px;
     font-family:'Source Code Pro', monospace;
     color:#fff;
@@ -89,10 +87,6 @@ body{
     justify-content:space-between;
     align-items:center;
     opacity:1
-}
-.body::-webkit-scrollbar{
-    width: 0;
-    height: 0;
 }
 h1,h2,h3{
     margin-bottom:0.5em;
@@ -226,6 +220,9 @@ hr{
     margin:2rem 0;
     line-height:2em;
     letter-spacing:2px
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
 }
 #content div{
     width:100%;

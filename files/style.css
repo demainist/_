@@ -75,6 +75,7 @@ html{
     font-size:16px
 }
 body{
+    overflow: hidden;
     font-size:16px;
     font-family:'Source Code Pro', monospace;
     color:#fff;

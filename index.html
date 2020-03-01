@@ -9,16 +9,109 @@
 		<meta name="referrer" content="no-referrer">
 		<link rel="stylesheet" href="./files/css">
 		<link rel="stylesheet" href="./files/style.css">
-		<title>_</title>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+		<title>1920x1080</title>
 	</head>
 	<body>
 		<div class="wrap">
-			<div class="section" id="content">
-					<iframe width="100%" height="600" scrolling="no" frameborder="no" src="https://fidbak.audio/_/embed/1737a7c8074781001da21bd6"></iframe>
+			<div id="nav-links">
+				<a href="#!1" id="rhizome">rhizome</a>
+				<a href="#!2" id="deleuze">deleuze</a>
+				<a href="#!3" id="hipertekstas">hipertekstas</a>
+				<a href="#!4" id="test">test</a>
+				<a href="#!5" id="medijos">medijos</a>
+				<a href="#!6" id="ilgesnis_tekstas_nei_iprastai">ilgesnis_tekstas_nei_iprastai</a>
+				<a href="#!7" id="dead_bird">dead_bird.jpg</a>
+				<a href="#!8" id="test2">test2</a>
+				<a href="#!9" id="ilgesnis_tekstas">ilgesnis_tekstas</a>
+				<a href="#!10" id="bird">bird</a>
+				<a href="#!11" id="test3">test3</a>
 			</div>
+		<div class="section" id="content">
+			<div id='1' class="section">
+				<p>ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai</p>
+				<img id="image" src="img/1.jpg">
+			</div>
+			<div id='2' class="section">
+				<p>ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai</p>
+				<img id="image" src="img/2.jpg">
+			</div>
+			<div id='3' class="section">
+				<p>ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai</p>
+				<img id="image" src="img/3.jpg">
+			</div>
+			<div id='4' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/4.jpg">
+			</div>
+			<div id='5' class="section">
+				<p>ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai</p>
+				<img id="image" src="img/5.jpg">
+			</div>
+			<div id='6' class="section">
+				<p>ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai ilgesnis_tekstas_nei_iprastai</p>
+				<img id="image" src="img/6.jpg">
+			</div>
+			<div id='7' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/7.jpg">
+			</div>
+			<div id='8' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/4.jpg">
+			</div>
+			<div id='9' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/3.jpg">
+			</div>
+			<div id='10' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/1.jpg">
+			</div>
+			<div id='11' class="section">
+				<p>the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together the muses never talk to each other, but sometimes they dance together</p>
+				<img id="image" src="img/2.jpg">
+			</div>
+		</div>
 			<div class="section footer">
     			<a href="index.html"></a>
-    		</div>
+    		</div>    		
+		<script type="text/javascript">
+    var links = document.getElementById('nav-links').getElementsByTagName('a');
+    for(var i = 0, link; link = links[i]; i++) {
+        link.onclick = showContent;
+        // Hide content divs by default
+        getContentDiv(link).style.display = 'none';
+    }
+    var current;
+
+    function showContent() {
+
+        // hide old content
+        if(current) current.style.display = 'none';
+
+        current = getContentDiv(this);
+        if(!current) return true;
+
+        //current.innerHTML = "This is where the xml variable content should go";
+        current.style.display = 'block';
+
+        return true;
+
+    }
+
+    function getContentDiv(link) {
+
+        var linkTo = link.getAttribute('href');
+
+        // Make sure the link is meant to go to a div
+        if(linkTo.substring(0, 2) != '#!') return;
+        linkTo = linkTo.substring(2);
+
+        return document.getElementById(linkTo);
+
+    }
+		</script>​
 		</div>
 	</body>
 </html>

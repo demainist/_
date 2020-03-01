@@ -1,8 +1,8 @@
 #rhizome{
   z-index: 100;
   position: absolute;
-  left: 90%;
-  top: 20%;
+  left: 86%;
+  top: 10%;
 }
 #storyspace{
   z-index: 100;
@@ -19,7 +19,7 @@
 #vannevar{
   z-index: 100;
   position: absolute;
-  left: 70%;
+  left: 73%;
   top: 32%;
 }
 #rayuela{
